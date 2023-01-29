@@ -30,14 +30,14 @@
             ><span class="logo-blue">Web</span>Studio</a
           >
           <ul class="menu list">
-            <li class="item">
-              <a href="./index.html" class="link header-menu">Studio</a>
+            <li class="menu-item">
+              <a href="./index.html" class="link menu-link current">Studio</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link header-menu">Portfolio</a>
+            <li class="menu-item">
+              <a href="./portfolio.html" class="link menu-link">Portfolio</a>
             </li>
-            <li class="item">
-              <a href="#" class="link header-menu">Contacts</a>
+            <li class="menu-item">
+              <a href="#" class="link menu-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@
           <h1 class="hero-title">
             Effective Solutions <br />for Your Business
           </h1>
-          <button type="button" class="button hero-button">
+          <button type="button" class="button hero-button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -432,5 +432,19 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="button modal-close-button"
+          data-modal-close
+        >
+          <svg class="modal-close-button-icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
